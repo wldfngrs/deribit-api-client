@@ -40,7 +40,7 @@ Your initiator should (and that's as compulsory as it gets) have an infinite loo
 Besides that, the code here, contains a pretty good implemention of `toAdmin()` that handles logon messages correctly everytime.
 
 ## Maintaining sessions
-Within your `onCreate()` method implementation retrieve your sessionID and store it in a class variable. You'd need it passed as an argument to the `sendToTarget()` method. Without that, quickFix just can't identify the session within which the correspondence should happen.
+Within your `onCreate()` method implementation, retrieve your sessionID and store it in a class variable. You'd need it passed as an argument to the `sendToTarget()` method. Without that, quickFix just can't identify the session within which the correspondence should happen.
 
 ## Recieving messages
 Yes, you have `toApp()` implemented, yet you still can't get your server responses, even when you're SURE the server is up and responding. Been there. Implement an `onMessage()` method for each of the messages you'd be expecting from the server. Thank me later.
