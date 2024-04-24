@@ -37,7 +37,7 @@ I struggled with distinguishing these callback functions and figuring out when e
 ## Logon
 Your initiator should (and that's as compulsory as it gets) have an infinite loop in it's implementation of the `run()` method. Don't worry about it, it's something about concurrent programming within the quickFix engine. Breaking out of this `run()` method loop should be conditional.  
 
-Besides that, the code here, contains a pretty good implemention of `toAdmin()` that handles logon messages correctly everytime.
+Besides that, the code here contains a pretty good implemention of `toAdmin()` that handles logon messages correctly everytime.
 
 ## Maintaining sessions
 Within your `onCreate()` method implementation, retrieve your sessionID and store it in a class variable. You'd need it passed as an argument to the `sendToTarget()` method. Without that, quickFix just can't identify the session within which the correspondence should happen.
